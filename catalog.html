@@ -9,12 +9,32 @@
 <body>
   <header class="header">
     <nav class="header-navigation">
-      <div class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="#" alt="Gllacy">
-      </div>
+      </a>
       <ul class="header-navigation-site">
         <li class="header-navigation-site-item header-navigation-site-item-current">
           <a href="catalog.html">Каталог</a>
+          <section class="catalog-popup">
+            <!--потом станет формой с раскрывающимся списком-->
+            <ul class="catalog-popup-list">
+              <li class="catalog-popup-item">
+                <a href="#">Новинки</a>
+              </li>
+              <li class="catalog-popup-item">
+                <a href="#">Сливочное</a>
+              </li>
+              <li class="catalog-popup-item">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="catalog-popup-item">
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-popup-item">
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
+          </section>
         </li>
         <li class="header-navigation-site-item">
           <a href="#">Доставка и оплата</a>
@@ -26,12 +46,31 @@
       <ul class="header-navigation-user">
         <li class="header-navigation-user-search">
           <button class="btn-transparent">Поиск</button>
+          <section class="search-popup">
+            <!--форма-->
+          </section>
         </li>
         <li class="header-navigation-user-login">
           <button class="btn-transparent">Вход</button>
+          <section class="login-popup">
+            <!--здесь будет форма форма-->
+            <button class="btn-red">Войти</button>
+            <ul class="login-help">
+              <li class="login-help-item">
+                <a href="#">Забыли пароль?</a>
+              </li>
+              <li class="login-help-item">
+                <a href="#">Новая регистрация</a>
+              </li>
+            </ul>
+          </section>
         </li>
         <li class="header-navigation-user-basket">
           <button class="btn-filled-busket">2 товара</button>
+          <section class="busket-popup">
+            <!-- Здесь будет таблица для корзины -->
+            <a href="#">Оформить заказ</a>
+          </section>
         </li>
       </ul>
     </nav>
@@ -44,7 +83,7 @@
   <main class="container">
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
-        <a href="#">Главная</a>
+        <a href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs-item">
         <a href="#">Каталог</a>
@@ -59,6 +98,9 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <!--здесь будет форма-->
+      <section class="sort-popup">
+        <!--здесь будет форма сортировки в виде раскрывающегося списка-->
+      </section>
     </section>
 
     <section class="catalog">
@@ -66,12 +108,10 @@
       <ul class="product-list">
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-            </a>
+            <img src="#" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">310 &#8381</span>
+            <span class="product-price-cost">310 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -81,15 +121,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-            </a>
+            <img src="#" alt="Сливочно-кофейное мороженое с кусочками шоколада">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">380 &#8381</span>
+            <span class="product-price-cost">380 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -99,15 +138,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-            </a>
+            <img src="#" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">355 &#8381</span>
+            <span class="product-price-cost">355 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -117,15 +155,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-            </a>
+            <img src="#" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">415 &#8381</span>
+            <span class="product-price-cost">415 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -135,15 +172,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с брусничным джемом">
-            </a>
+            <img src="#" alt="Сливочное мороженое с брусничным джемом">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">325 &#8381</span>
+            <span class="product-price-cost">325 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -153,15 +189,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочно-черничное мороженое с цельными ягодами черники">
-            </a>
+            <img src="#" alt="Сливочно-черничное мороженое с цельными ягодами черники">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">410 &#8381</span>
+            <span class="product-price-cost">410 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -171,15 +206,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
-            </a>
+            <img src="#" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">375 &#8381</span>
+            <span class="product-price-cost">375 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -189,15 +223,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с шоколадной стружкой">
-            </a>
+            <img src="#" alt="Сливочное мороженое с шоколадной стружкой">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">320 &#8381</span>
+            <span class="product-price-cost">320 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -207,15 +240,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочно-ванильное мороженое с кусочками шоколада">
-            </a>
+            <img src="#" alt="Сливочно-ванильное мороженое с кусочками шоколада">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">440 &#8381</span>
+            <span class="product-price-cost">440 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -225,15 +257,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с ментоловым сиропом">
-            </a>
+            <img src="#" alt="Сливочное мороженое с ментоловым сиропом">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">435 &#8381</span>
+            <span class="product-price-cost">435 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -243,15 +274,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с кусочками черного шоколада">
-            </a>
+            <img src="#" alt="Сливочное мороженое с кусочками черного шоколада">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">355 &#8381</span>
+            <span class="product-price-cost">355 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -261,15 +291,14 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
-            <a href="#">
-              <img src="#" alt="Сливочное мороженое с мятным сиропом">
-            </a>
+            <img src="#" alt="Сливочное мороженое с мятным сиропом">
           </div>
           <div class="product-price">
-            <span class="product-price-cost">420 &#8381</span>
+            <span class="product-price-cost">420 &nbsp</span>
             <span class="product-price-amount">/кг</span>
           </div>
           <div class="product-desc">
@@ -279,6 +308,7 @@
               </a>
             </h3>
           </div>
+          <button class="btn-red">Быстрый просмотр</button>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -358,36 +388,6 @@
     </div>
   </footer>
 
-  <section class="busket-popup">
-    <!-- Здесь будет таблица для корзины -->
-    <a href="#">Оформить заказ</a>
-  </section>
-
-  <section class="card-popup">
-    <div class="product-img">
-      <a href="#">
-        <img src="#" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-      </a>
-    </div>
-    <div class="product-price">
-      <span class="product-price-cost">355
-        <span class="rub-popup">&#8381</span>
-      </span>
-      <span class="product-price-amount">/кг</span>
-    </div>
-    <div class="product-desc">
-      <h3>
-        <a href="#">
-          Сливочно-клубничное с присыпкой из белого шоколада
-        </a>
-      </h3>
-    </div>
-    <button class="btn-red">Быстрый просмотр</button>
-  </section>
-
-  <section class="sort-popup">
-    <!--здесь будет форма сортировки в виде раскрывающегося списка-->
-  </section>
 </body>
 
 </html>
