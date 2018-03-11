@@ -15,26 +15,23 @@
       <ul class="header-navigation-site">
         <li class="header-navigation-site-item">
           <a href="catalog.html">Каталог</a>
-          <section class="catalog-popup">
-            <!--потом станет формой с раскрывающимся списком-->
-            <ul class="catalog-popup-list">
-              <li class="catalog-popup-item">
-                <a href="#">Новинки</a>
-              </li>
-              <li class="catalog-popup-item">
-                <a href="#">Сливочное</a>
-              </li>
-              <li class="catalog-popup-item">
-                <a href="#">Щербеты</a>
-              </li>
-              <li class="catalog-popup-item">
-                <a href="#">Фруктовый лед</a>
-              </li>
-              <li class="catalog-popup-item">
-                <a href="#">Мелорин</a>
-              </li>
-            </ul>
-          </section>
+          <ul class="catalog-submenu">
+            <li class="catalog-submenu-item">
+              <a href="#">Новинки</a>
+            </li>
+            <li class="catalog-submenu-item">
+              <a href="#">Сливочное</a>
+            </li>
+            <li class="catalog-submenu-item">
+              <a href="#">Щербеты</a>
+            </li>
+            <li class="catalog-submenu-item">
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li class="catalog-submenu-item">
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li class="header-navigation-site-item">
           <a href="#">Доставка и оплата</a>
@@ -46,31 +43,65 @@
       <ul class="header-navigation-user">
         <li class="header-navigation-user-search">
           <button class="btn-transparent">Поиск</button>
-          <section class="search-popup">
-            <!--форма-->
-          </section>
+          <form class="search-popup" action="" method="post">
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+            <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+          </form>
         </li>
         <li class="header-navigation-user-login">
           <button class="btn-transparent">Вход</button>
-          <section class="login-popup">
-            <!--здесь будет форма форма-->
+          <form class="login-popup" action="" method="post">
+            <div class="login-fields">
+              <label class="visually-hidden" for="login-email-field">Ваша электронная почта</label>
+              <input type="email" name="login-email" id="login-email-field" placeholder="Электронная почта">
+              <label class="visually-hidden" for="login-password-field">Ваш пароль</label>
+              <input type="password" name="login-password" id="login-password-field" placeholder="Пароль">
+            </div>
             <button class="btn-red">Войти</button>
-            <ul class="login-help">
-              <li class="login-help-item">
-                <a href="#">Забыли пароль?</a>
-              </li>
-              <li class="login-help-item">
-                <a href="#">Новая регистрация</a>
-              </li>
-            </ul>
-          </section>
+            <div class="login-links">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </form>
         </li>
         <li class="header-navigation-user-basket">
           <button class="btn-transparent">Пусто</button>
-          <section class="busket-popup">
-            <!-- Здесь будет таблица для корзины -->
-            <a href="#">Оформить заказ</a>
-          </section>
+          <div class="basket-popup">
+            <table class="basket-table">
+              <tr class="basket-table-item">
+                <td class="basket-table-remove">
+                  <button class="product-remove">X</button>
+                </td>
+                <td class="basket-table-preview">
+                  <img src="#" alt="Пломбир с апельсиновым джемом">
+                </td>
+                <td class="basket-table-name">Пломбир с апельсиновым джемом</td>
+                <td class="basket-table-calc">
+                  <span class="basket-table-weight">1,5 кг &#xD7;</span>
+                  <span class="basket-table-price">200 руб.</span>
+                </td>
+                <td class="basket-table-cost">300 руб.</td>
+              </tr>
+              <tr class="basket-table-item">
+                <td class="basket-table-remove">
+                  <button class="product-remove">X</button>
+                </td>
+                <td class="basket-table-preview">
+                  <img src="#" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </td>
+                <td class="basket-table-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="basket-table-calc">
+                  <span class="basket-table-weight">1,5 кг &#xD7;</span>
+                  <span class="basket-table-price">300 руб.</span>
+                </td>
+                <td class="basket-table-cost">450 руб.</td>
+              </tr>
+              <tr class="basket-table-item">
+                <td class="basket-table-total" colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </table>
+            <a class="btn-red" href="#">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -101,7 +132,14 @@
           <a class="btn-red" href="#">Давайте оба!</a>
         </li>
       </ul>
-      <!--здесь будут radio buttons для переключения слайдов-->
+      <form class="promo-btn-radio" action="" method="post">
+        <input type="radio" name="promo-choice" id="promo-choice-1" value="promo-1" checked>
+        <label class="visually-hidden" for="promo-choice-1">Крем-брюле и пломбир с малиновым джемом</label>
+        <input type="radio" name="promo-choice" id="promo-choice-2" value="promo-2">
+        <label class="visually-hidden" for="promo-choice-2">Шоколадный пломбир и лимонный сорбет</label>
+        <input type="radio" name="promo-choice" id="promo-choice-3" value="promo-3">
+        <label class="visually-hidden" for="promo-choice-3">Пломбир с помадкой и клубнчиный щербет</label>
+      </form>
     </section>
 
     <section class="banners">
@@ -217,7 +255,11 @@
       <h2 class="visual-hidden">Подпишитесь на нас</h2>
       <p class="mailing-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать ненужной ерунды. Честно =)</p>
-      <!--форма-->
+      <form class="mailing-form" action="" method="post">
+        <label class="visually-hidden" for="">Ваш email</label>
+        <input type="text" name="mailing-email" id="mailing-email-field" placeholder="Электронная почта">
+        <button class="btn-red">Отправить</button>
+      </form>
     </section>
 
     <section class="contacts">
@@ -297,9 +339,16 @@
 
   <section class="feedback-popup">
     <p class="feedback-popup-heading">Мы обязательно вам ответим!</p>
-    <!--форма-->
-    <button class="btn-red">Отправить</button>
-    <span class="popup-close">x</span>
+    <form class="feedback-form" action="" method="post">
+      <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
+      <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="feedback-email-field">Ваше почта</label>
+      <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="feedback-comment-field">Напишите что-нибудь</label>
+      <textarea name="feedback-comment" id="feedback-comment-field">Напишите что-нибудь...</textarea>
+      <button class="btn-red">Отправить</button>
+    </form>
+    <button class="popup-close">x</button>
   </section>
 </body>
 
