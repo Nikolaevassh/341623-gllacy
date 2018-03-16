@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #9d8b84;
+  background-color: #8996a6;
+  background-color: #849d8f;
+}
+
+a {
+  font-weight: 700;
+}
+/*хэдер*/
+.header-navigation-site {
+  line-height: 18px;
+}
+
+.header-navigation-site,
+.header-navigation-user,
+.catalog-submenu {
+  list-style: none;
+}
+
+.header-navigation-site a,
+.header-navigation-user a {
+  color: #ffffff;
+}
+
+.header-navigation-site a:hover {
+  background-color: #f7f6f3;
+  color: #323232;
+  text-decoration: none;
+}
+
+.header-navigation-site a:active {
+  background-color: #ededed;
+  color: #323232;
+  text-decoration: none;
+}
+
+.catalog-submenu a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-submenu a:hover {
+  background-color: #fbded7;
+}
+
+.catalog-submenu a:active {
+  background-color: #f6b5a5;
+}
+
+.active {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.header-navigation-user button {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-navigation-user button:hover {
+  background-color: #f8f7f4;
+}
+
+.header-contacts-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.header-contacts-number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.search-popup,
+.login-popup,
+.basket-popup,
+.feedback-popup {
+  background-color: #f8f7f4;
+}
+
+.login-popup a {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #323232;
+}
+
+.basket-table {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-table-price {
+  color: #999999;
+}
+
+.basket-table-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
