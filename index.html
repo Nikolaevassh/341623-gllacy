@@ -45,22 +45,22 @@
       </ul>
       <ul class="header-navigation-user">
         <li class="header-navigation-user-search">
-          <button class="btn-transparent">Поиск</button>
-          <form class="search-popup" action="" method="post">
+          <button class="btn btn-transparent">Поиск</button>
+          <form class="popup search-popup" action="" method="post">
             <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input type="search" name="search" id="search-field" placeholder="Что ищем?">
           </form>
         </li>
         <li class="header-navigation-user-login">
-          <button class="btn-transparent">Вход</button>
-          <form class="login-popup" action="" method="post">
+          <button class="btn btn-transparent">Вход</button>
+          <form class="popup login-popup" action="" method="post">
             <div class="login-fields">
               <label class="visually-hidden" for="login-email-field">Ваша электронная почта</label>
               <input type="email" name="login-email" id="login-email-field" placeholder="Электронная почта">
               <label class="visually-hidden" for="login-password-field">Ваш пароль</label>
               <input type="password" name="login-password" id="login-password-field" placeholder="Пароль">
             </div>
-            <button class="btn-red">Войти</button>
+            <button class="btn btn-red">Войти</button>
             <div class="login-links">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
@@ -68,8 +68,8 @@
           </form>
         </li>
         <li class="header-navigation-user-basket">
-          <button class="btn-transparent">Пусто</button>
-          <div class="basket-popup">
+          <button class="btn btn-transparent">Пусто</button>
+          <div class="popup basket-popup">
             <table class="basket-table">
               <tr class="basket-table-item">
                 <td class="basket-table-remove">
@@ -103,7 +103,7 @@
                 <td class="basket-table-total" colspan="5">Итого: 750 руб.</td>
               </tr>
             </table>
-            <a class="btn-red" href="#">Оформить заказ</a>
+            <a class="btn btn-red" href="#">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -122,17 +122,17 @@
         <li class="promo-slide">
           <img src="img/group1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым вареньем">
           <h2 class="promo-slide-heading">Крем-брюле и пломбир с малиновым вареньем</h2>
-          <a class="btn-red" href="#">Давайте оба!</a>
+          <a class="btn btn-lg btn-red" href="#">Давайте оба!</a>
         </li>
         <li class="promo-slide">
           <img src="img/group2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
           <h2 class="promo-slide-heading">Шоколадный пломбир и лимонный сорбет</h2>
-          <a class="btn-red" href="#">Давайте оба!</a>
+          <a class="btn btn-lg btn-red" href="#">Давайте оба!</a>
         </li>
         <li class="promo-slide">
           <img src="img/group3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
           <h2 class="promo-slide-heading">Пломбир с помадкой и клубничный щербет</h2>
-          <a class="btn-red" href="#">Давайте оба!</a>
+          <a class="btn btn-lg btn-red" href="#">Давайте оба!</a>
         </li>
       </ul>
       <ul class="slides-switches">
@@ -151,15 +151,15 @@
     <section class="banners">
       <h2 class="visually-hidden">Промо-акции</h2>
       <div class="banners-items">
-        <div class="banners-item">
+        <div class="banners-item-raspberry">
           <h3 class="banners-item-heading">Малинка даром!</h3>
           <p class="banners-item-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn-red" href="#">Хочу варенье!</a>
+          <a class="btn btn-red" href="#">Хочу варенье!</a>
         </div>
-        <div class="banner-item">
+        <div class="banner-item-chocolate">
           <h3 class="banners-item-heading">Шоколадки даром!</h3>
-          <p class="banners-item-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шjколданой присыпки совершенно бесплатно.</p>
-          <a class="btn-red" href="#">Хочу шоколадки!</a>
+          <p class="banners-item-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="btn btn-red" href="#">Хочу шоколадки!</a>
         </div>
       </div>
     </section>
@@ -258,36 +258,38 @@
     </article>
 
     <section class="mailing">
-      <h2 class="visual-hidden">Подпишитесь на нас</h2>
-      <p class="mailing-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-        спамить и не слать ненужной ерунды. Честно =)</p>
-      <form class="mailing-form" action="" method="post">
-        <label class="visually-hidden" for="">Ваш email</label>
-        <input type="text" name="mailing-email" id="mailing-email-field" placeholder="Электронная почта">
-        <button class="btn-red">Отправить</button>
-      </form>
+      <div class="mailing-wrapper">
+        <h2 class="visual-hidden">Подпишитесь на нас</h2>
+        <p class="mailing-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+          не спамить и не слать ненужной ерунды. Честно =)</p>
+        <form class="mailing-form" action="" method="post">
+          <label class="visually-hidden" for="">Ваш email</label>
+          <input type="text" name="mailing-email" id="mailing-email-field" placeholder="Электронная почта">
+          <button class="btn btn-red">Отправить</button>
+        </form>
+      </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="Карта">
       <div class="contacts-address">
-        <p class="contacts-address-desc">Адрес главного офиса</p>
-        <p class="contacts-address-desc">и офлайн-магазина:</p>
+        <p class="contacts-address-desc">Адрес главного офиса
+          <br> и офлайн-магазина:</p>
         <p class="contacts-address-content">
-          <strong> ул. Большая Конюшенная</strong>
-        </p>
-        <p class="contacts-address-content">
-          <strong>19/8, Санкт-Петербург</strong>
+          ул. Большая Конюшенная
+          <br> 19/8, Санкт-Петербург
         </p>
 
-        <p class="contacts-address-desc">Для заказов по телефону:
-          <p class="contacts-address-content">
-            <strong> 8 812 450-25-25</strong>
-          </p>
-          <p class="contacts-address-desc">(с 10 до 20 ежедневно) </p>
+
+        <p class="contacts-address-desc">Для заказов по телефону:</p>
+        <p class="contacts-address-content">
+          8 812 450-25-25
+          <br>
+          <span class="contacts-address-desc">(с 10 до 20 ежедневно) </span>
+        </p>
+        <button class="btn btn-red">Форма обратной связи</button>
       </div>
-      <button class="btn-red">Форма обратной связи</button>
     </section>
   </main>
 
@@ -343,7 +345,7 @@
     </div>
   </footer>
 
-  <section class="feedback-popup">
+  <section class="popup feedback-popup">
     <p class="feedback-popup-heading">Мы обязательно вам ответим!</p>
     <form class="feedback-form" action="" method="post">
       <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
@@ -352,7 +354,7 @@
       <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
       <label class="visually-hidden" for="feedback-comment-field">Напишите что-нибудь</label>
       <textarea name="feedback-comment" id="feedback-comment-field">Напишите что-нибудь...</textarea>
-      <button class="btn-red">Отправить</button>
+      <button class="btn btn-red">Отправить</button>
     </form>
     <button class="popup-close">x</button>
   </section>
