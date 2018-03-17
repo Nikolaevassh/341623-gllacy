@@ -6,6 +6,7 @@
   <title>Каталог. Сливочное мороженое</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <li class="catalog-submenu-item">
               <a href="#">Новинки</a>
             </li>
-            <li class="catalog-submenu-item">
+            <li class="catalog-submenu-item active">
               <a href="#">Сливочное</a>
             </li>
             <li class="catalog-submenu-item">
@@ -44,22 +45,22 @@
       </ul>
       <ul class="header-navigation-user">
         <li class="header-navigation-user-search">
-          <button class="btn-transparent">Поиск</button>
-          <form class="search-popup" action="" method="post">
+          <button class="btn btn-transparent">Поиск</button>
+          <form class="popup search-popup" action="" method="post">
             <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input type="search" name="search" id="search-field" placeholder="Что ищем?">
           </form>
         </li>
         <li class="header-navigation-user-login">
-          <button class="btn-transparent">Вход</button>
-          <form class="login-popup" action="" method="post">
+          <button class="btn btn-transparent">Вход</button>
+          <form class="popup login-popup" action="" method="post">
             <div class="login-fields">
               <label class="visually-hidden" for="login-email-field">Ваша электронная почта</label>
               <input type="email" name="login-email" id="login-email-field" placeholder="Электронная почта">
               <label class="visually-hidden" for="login-password-field">Ваш пароль</label>
               <input type="password" name="login-password" id="login-password-field" placeholder="Пароль">
             </div>
-            <button class="btn-red">Войти</button>
+            <button class="btn btn-red">Войти</button>
             <div class="login-links">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
@@ -67,8 +68,8 @@
           </form>
         </li>
         <li class="header-navigation-user-basket">
-          <button class="btn-filled-busket">2 товара</button>
-          <div class="basket-popup">
+          <button class="btn btn-transparent basket-with-products">2 товара</button>
+          <div class="popup basket-popup">
             <table class="basket-table">
               <tr class="basket-table-item">
                 <td class="basket-table-remove">
@@ -102,7 +103,7 @@
                 <td class="basket-table-total" colspan="5">Итого: 750 руб.</td>
               </tr>
             </table>
-            <a class="btn-red" href="#">Оформить заказ</a>
+            <a class="btn btn-red" href="#">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -126,14 +127,14 @@
       </li>
     </ul>
 
-    <h1>Сливочное мороженое</h1>
+    <h1 class="catalog-heading">Сливочное мороженое</h1>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-choice" action="" method="post">
         <div class="filter-sort">
           <label for="sort-field">Сортировка:</label>
-          <select name="sort" id="sort-field">
+          <select class="input-transparent" name="sort" id="sort-field">
             <option value="sort-popular">по популярности</option>
             <option value="sort-price-lth">сначала недорогие</option>
             <option value="sort-price-htl">сначала дорогие</option>
@@ -146,29 +147,33 @@
         </div>
         <div class="filter-fat">
           <span class="filter-name">Жирность:</span>
-          <input type="radio" name="fat-choice" id="fat-choice-1" value="zero">
-          <label for="fat-choice-1">0%</label>
-          <input type="radio" name="fat-choice" id="fat-choice-2" value="until-ten" checked>
-          <label for="fat-choice-2">до 10%</label>
-          <input type="radio" name="fat-choice" id="fat-choice-3" value="until-thirty">
-          <label for="fat-choice-3">до 30%</label>
-          <input type="radio" name="fat-choice" id="fat-choice-4" value="over-thirty">
-          <label for="fat-choice-4">выше 30%</label>
+          <div class="radio-group input-transparent">
+            <input type="radio" name="fat-choice" id="fat-choice-1" value="zero">
+            <label for="fat-choice-1">0%</label>
+            <input type="radio" name="fat-choice" id="fat-choice-2" value="until-ten" checked>
+            <label for="fat-choice-2">до 10%</label>
+            <input type="radio" name="fat-choice" id="fat-choice-3" value="until-thirty">
+            <label for="fat-choice-3">до 30%</label>
+            <input type="radio" name="fat-choice" id="fat-choice-4" value="over-thirty">
+            <label for="fat-choice-4">выше 30%</label>
+          </div>
         </div>
         <div class="filter-filling">
           <span class="filter-name">Наполнители:</span>
-          <input type="checkbox" name="filling-choice-1" id="filling-chocolate" checked>
-          <label for="filling-chocolate">шоколадные</label>
-          <input type="checkbox" name="filling-choice-2" id="filling-sugar" checked>
-          <label for="filling-sugar">сахарные присыпки</label>
-          <input type="checkbox" name="filling-choice-3" id="filling-fruits">
-          <label for="filling-fruits">фрукты</label>
-          <input type="checkbox" name="filling-choice-4" id="filling-syrups">
-          <label for="filling-syrups">сиропы</label>
-          <input type="checkbox" name="filling-choice-5" id="filling-jams">
-          <label for="filling-jams">шоколадные</label>
+          <div class="checkbox-group input-transparent">
+            <input type="checkbox" name="filling-choice-1" id="filling-chocolate" checked>
+            <label for="filling-chocolate">шоколадные</label>
+            <input type="checkbox" name="filling-choice-2" id="filling-sugar" checked>
+            <label for="filling-sugar">сахарные присыпки</label>
+            <input type="checkbox" name="filling-choice-3" id="filling-fruits">
+            <label for="filling-fruits">фрукты</label>
+            <input type="checkbox" name="filling-choice-4" id="filling-syrups">
+            <label for="filling-syrups">сиропы</label>
+            <input type="checkbox" name="filling-choice-5" id="filling-jams">
+            <label for="filling-jams">шоколадные</label>
+          </div>
         </div>
-        <button class="btn-filter">Применить</button>
+        <button class="btn btn-transparent btn-filter">Применить</button>
       </form>
     </section>
 
@@ -190,7 +195,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -207,7 +212,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -224,7 +229,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -241,7 +246,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -258,7 +263,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -275,7 +280,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -292,7 +297,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -309,7 +314,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -326,7 +331,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -343,7 +348,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -360,7 +365,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
         <li class="product-item">
           <div class="product-img">
@@ -377,7 +382,7 @@
               </a>
             </h3>
           </div>
-          <button class="btn-red">Быстрый просмотр</button>
+          <button class="btn btn-red">Быстрый просмотр</button>
         </li>
       </ul>
       <ul class="pagination-list">
