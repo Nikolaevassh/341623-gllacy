@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-
   color: #ffffff;
   background-color: #9d8b84;
   background-color: #8996a6;
@@ -108,9 +106,15 @@ textarea:focus {
   text-decoration: none;
 }
 
+.header-navigation-site-item {
+  display: inline-block;
+}
+
 /* выпадашка меню */
+
 .catalog-submenu {
   background-color: #f8f7f4;
+  position: absolute;
 }
 
 .catalog-submenu a {
@@ -147,6 +151,19 @@ textarea:focus {
   background-color: #f8f7f4;
 }
 
+.header-navigation-user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+[class*="header-navigation-user-"] {
+  margin-left: 10px;
+}
+
+.header-contacts {
+  text-align: right;
+}
+
 .header-contacts-time {
   font-size: 14px;
   line-height: 16px;
@@ -159,10 +176,25 @@ textarea:focus {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 
 .popup {
   background-color: #f8f7f4;
+  display: none;
+  position: absolute;
+}
+
+/* выпадашка на поиск */
+
+.header-navigation-user-search:hover .search-popup {
+  display: block;
+}
+
+/* выпадашка на вход */
+
+.header-navigation-user-login:hover .login-popup {
+  display: block;
 }
 
 .login-popup a {
@@ -172,10 +204,16 @@ textarea:focus {
   color: #323232;
 }
 
+/* выпадашка на корзину */
+
 .basket-table {
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+}
+
+.basket-with-products:hover+.basket-popup {
+  display: block;
 }
 
 .basket-table-price {
@@ -190,6 +228,14 @@ textarea:focus {
 
 /* промо */
 
+.promo-slides {
+  list-style: none;
+}
+
+.promo-slide {
+  text-align: center;
+}
+
 .promo-slide-heading {
   font-size: 60px;
   font-weight: 700;
@@ -202,14 +248,19 @@ textarea:focus {
 }
 
 /* банеры */
+
 .banners-item-raspberry {
   background-image: url("../img/raspberry-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 17px;
 }
 
 .banner-item-chocolate {
   background-image: url("../img/chocolate-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 17px;
 }
 
 .banners-item-heading {
@@ -227,8 +278,17 @@ textarea:focus {
 }
 
 /* хиты */
+
 .product-list {
   list-style: none;
+  flex-wrap: wrap;
+}
+
+.product-list li.product-item {
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
 }
 
 .product-desc a {
@@ -256,6 +316,7 @@ textarea:focus {
 }
 
 /* преимущества */
+
 .features {
   color: #323232;
   background-image: url("../img/waffle.jpg");
@@ -278,10 +339,12 @@ textarea:focus {
 }
 
 /* блог */
+
 .blog-preview {
   color: #323232;
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blog-preview-heading {
@@ -306,9 +369,11 @@ textarea:focus {
 }
 
 /* подписка */
+
 .mailing {
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mailing-wrapper {
@@ -323,6 +388,7 @@ textarea:focus {
 }
 
 /* контакты */
+
 .contacts-address {
   color: #323232;
   background-color: #ffffff;
@@ -340,7 +406,25 @@ textarea:focus {
   line-height: 24px;
 }
 
+.map-placeholder {
+  width: 100%;
+}
+
 /* футер */
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social li {
+  display: inline;
+}
+
+.footer-nav-column {
+  margin: 0 16px;
+}
+
 .footer-social,
 .footer-navigation ul {
   list-style: none;
@@ -364,6 +448,7 @@ a.bold {
 }
 
 /* обратная связь */
+
 .feedback-popup-heading {
   font-size: 24px;
   font-weight: 500;
@@ -372,17 +457,27 @@ a.bold {
 }
 
 /* каталог */
+
 /* шапка */
+
 .basket-with-products {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: #323232;
-
   background-color: #f8f7f4;
 }
 
 /* Хлебные крошки */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  display: inline;
+}
+
 .breadcrumbs-item a {
   font-size: 14px;
   font-weight: 400;
@@ -398,6 +493,7 @@ a.bold {
 }
 
 /* название страницы каталога */
+
 .catalog-heading {
   font-size: 35px;
   font-weight: 700;
@@ -406,6 +502,7 @@ a.bold {
 }
 
 /* фильтры */
+
 .filter-choice select.input-transparent:hover {
   color: #323232;
 }
@@ -425,6 +522,16 @@ a.bold {
 }
 
 /* пагинация */
+
+.pagination-list {
+  list-style: none;
+  text-align: right;
+}
+
+.pagination-item {
+  display: inline;
+}
+
 .pagination-item a {
   font-size: 16px;
   font-weight: 500;
@@ -445,4 +552,76 @@ a.bold {
 .pagination-item-current a {
   color: #323232;
   background-color: #ffffff;
+}
+
+/* сетка */
+
+.row {
+  display: flex;
+}
+
+[class*=col-] {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+[class*=col-]:first-child {
+  padding-left: 0;
+}
+
+[class*=col-]:last-child {
+  padding-right: 0;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
 }
