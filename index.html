@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="green-background">
   <header class="header">
     <div class="container">
       <nav class="header-navigation">
         <div class="row">
-          <div class="row col-6">
+          <div class="row col col-6">
             <a class="header-logo" href="index.html">
               <img src="img/logo.svg" width="154" height="64" alt="Gllacy">
             </a>
@@ -47,16 +47,16 @@
               </li>
             </ul>
           </div>
-          <div class="col-6">
+          <div class="col col-6">
             <ul class="header-navigation-user">
-              <li class="header-navigation-user-search">
+              <li class="header-nav-user-item header-navigation-user-search">
                 <button class="btn btn-transparent">Поиск</button>
                 <form class="popup search-popup" action="" method="post">
                   <label class="visually-hidden" for="search-field">Поиск по сайту</label>
                   <input type="search" name="search" id="search-field" placeholder="Что ищем?">
                 </form>
               </li>
-              <li class="header-navigation-user-login">
+              <li class="header-nav-user-item header-navigation-user-login">
                 <button class="btn btn-transparent">Вход</button>
                 <form class="popup login-popup" action="" method="post">
                   <div class="login-fields">
@@ -72,7 +72,7 @@
                   </div>
                 </form>
               </li>
-              <li class="header-navigation-user-basket">
+              <li class="header-nav-user-item header-navigation-user-basket">
                 <button class="btn btn-transparent">Пусто</button>
                 <div class="popup basket-popup">
                   <table class="basket-table">
@@ -163,15 +163,15 @@
         <h2 class="visually-hidden">Промо-акции</h2>
         <div class="banners-items">
           <div class="row">
-            <div class="col-6">
-              <div class="banners-item-raspberry">
+            <div class="col col-6">
+              <div class="banners-item banners-item-raspberry">
                 <h3 class="banners-item-heading">Малинка даром!</h3>
                 <p class="banners-item-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="btn btn-red" href="#">Хочу варенье!</a>
               </div>
             </div>
-            <div class="col-6">
-              <div class="banner-item-chocolate">
+            <div class="col col-6">
+              <div class="banners-item banners-item-chocolate">
                 <h3 class="banners-item-heading">Шоколадки даром!</h3>
                 <p class="banners-item-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <a class="btn btn-red" href="#">Хочу шоколадки!</a>
@@ -186,7 +186,7 @@
       <div class="container">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="product-list row">
-          <li class="product-item col-3">
+          <li class="product-item col col-3">
             <div class="product-img">
               <img src="img/1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             </div>
@@ -202,7 +202,7 @@
               </h3>
             </div>
           </li>
-          <li class="product-item col-3">
+          <li class="product-item col col-3">
             <div class="product-img">
               <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
             </div>
@@ -218,7 +218,7 @@
               </h3>
             </div>
           </li>
-          <li class="product-item col-3">
+          <li class="product-item col col-3">
             <div class="product-img">
               <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
             </div>
@@ -234,7 +234,7 @@
               </h3>
             </div>
           </li>
-          <li class="product-item col-3">
+          <li class="product-item col col-3">
             <div class="product-img">
               <img src="img/4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
             </div>
@@ -274,7 +274,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col col-6">
           <article class="blog-preview">
             <h2 class="blog-preview-heading">Новое в нашем блоге</h2>
             <p class="blog-preview-content">
@@ -282,7 +282,7 @@
             </p>
           </article>
         </div>
-        <div class="col-6">
+        <div class="col col-6">
           <section class="mailing">
             <div class="mailing-wrapper">
               <h2 class="visual-hidden">Подпишитесь на нас</h2>
@@ -325,7 +325,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col col-4">
           <ul class="footer-social">
             <li>
               <a class="social-button" href="#">Твиттер</a>
@@ -341,7 +341,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-4">
+        <div class="col col-4">
           <div class="footer-navigation">
             <div class="footer-nav-column">
               <ul>
@@ -368,7 +368,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col col-4">
           <div class="whomade">
             <img src="#" alt="Логотип HTML academy">
             <p>Сделано в

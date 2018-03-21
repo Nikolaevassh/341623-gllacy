@@ -6,9 +6,18 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #9d8b84;
-  background-color: #8996a6;
+}
+
+.green-background {
   background-color: #849d8f;
+}
+
+.blue-background {
+  background-color: #8996a6;
+}
+
+.purple-background {
+  background-color: #9d8b84;
 }
 
 ul {
@@ -156,7 +165,7 @@ textarea:focus {
   justify-content: flex-end;
 }
 
-[class*="header-navigation-user-"] {
+.header-nav-user-item {
   margin-left: 10px;
 }
 
@@ -212,7 +221,7 @@ textarea:focus {
   color: #323232;
 }
 
-.basket-with-products:hover+.basket-popup {
+.basket-with-products:hover + .basket-popup {
   display: block;
 }
 
@@ -248,19 +257,18 @@ textarea:focus {
 }
 
 /* банеры */
-
-.banners-item-raspberry {
-  background-image: url("../img/raspberry-bg.jpg");
+.banners-item {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
 }
 
-.banner-item-chocolate {
+.banners-item-raspberry {
+  background-image: url("../img/raspberry-bg.jpg");
+}
+
+.banners-item-chocolate {
   background-image: url("../img/chocolate-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 17px;
 }
 
 .banners-item-heading {
@@ -285,7 +293,6 @@ textarea:focus {
 }
 
 .product-list li.product-item {
-  align-items: center;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -560,16 +567,16 @@ a.bold {
   display: flex;
 }
 
-[class*=col-] {
+.col {
   padding-left: 13px;
   padding-right: 13px;
 }
 
-[class*=col-]:first-child {
+.col:first-child {
   padding-left: 0;
 }
 
-[class*=col-]:last-child {
+.col:last-child {
   padding-right: 0;
 }
 
