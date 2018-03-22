@@ -14,7 +14,7 @@
     <div class="container">
       <nav class="header-navigation">
         <div class="row">
-          <div class="row col col-6">
+          <div class="row col-2">
             <a class="header-logo" href="index.html">
               <img src="img/logo.svg" width="154" height="64" alt="Gllacy">
             </a>
@@ -47,7 +47,7 @@
               </li>
             </ul>
           </div>
-          <div class="col col-6">
+          <div class="col-2">
             <ul class="header-navigation-user">
               <li class="header-nav-user-item header-navigation-user-search">
                 <button class="btn btn-transparent">Поиск</button>
@@ -141,10 +141,10 @@
     <section class="filters">
       <div class="container">
         <div class="row">
-          <div class="col col-9">
+          <div class="col-3">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter-choice" action="" method="post">
-              <div class="filter-sort">
+              <div class="filter-choice-col filter-sort">
                 <label for="sort-field">Сортировка:</label>
                 <select class="input-transparent" name="sort" id="sort-field">
                   <option value="sort-popular">по популярности</option>
@@ -153,11 +153,11 @@
                   <option value="sort-fat">по жирности</option>
                 </select>
               </div>
-              <div class="filter-price">
+              <div class="filter-choice-col filter-price">
                 <label for="price-range-field">Цена: 100 руб. - 500 руб.</label>
                 <input type="range" name="price-range" id="price-range-field" min="100" max="500" step="1">
               </div>
-              <div class="filter-fat">
+              <div class="filter-choice-col filter-fat">
                 <span class="filter-name">Жирность:</span>
                 <div class="radio-group input-transparent">
                   <input type="radio" name="fat-choice" id="fat-choice-1" value="zero">
@@ -170,7 +170,7 @@
                   <label for="fat-choice-4">выше 30%</label>
                 </div>
               </div>
-              <div class="filter-filling">
+              <div class="filter-choice-col filter-filling">
                 <span class="filter-name">Наполнители:</span>
                 <div class="checkbox-group input-transparent">
                   <input type="checkbox" name="filling-choice-1" id="filling-chocolate" checked>
@@ -185,7 +185,7 @@
                   <label for="filling-jams">шоколадные</label>
                 </div>
               </div>
-              <button class="btn btn-transparent btn-filter">Применить</button>
+              <button class="filter-choice-col btn btn-transparent btn-filter">Применить</button>
             </form>
           </div>
         </div>
@@ -196,7 +196,7 @@
       <div class="container">
         <h2 class="visually-hidden">Список видов сливочного мороженого</h2>
         <ul class="product-list row">
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             </div>
@@ -213,7 +213,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
             </div>
@@ -230,7 +230,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
             </div>
@@ -247,7 +247,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/4.jpg" width="267" height="267" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
             </div>
@@ -264,7 +264,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/5.jpg" width="267" height="267" alt="Сливочное мороженое с брусничным джемом">
             </div>
@@ -281,7 +281,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое с цельными ягодами черники">
             </div>
@@ -298,7 +298,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
             </div>
@@ -315,7 +315,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/8.jpg" width="267" height="267" alt="Сливочное мороженое с шоколадной стружкой">
             </div>
@@ -332,7 +332,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое с кусочками шоколада">
             </div>
@@ -349,7 +349,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/10.jpg" width="267" height="267" alt="Сливочное мороженое с ментоловым сиропом">
             </div>
@@ -366,7 +366,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/11.jpg" width="267" height="267" alt="Сливочное мороженое с кусочками черного шоколада">
             </div>
@@ -383,7 +383,7 @@
             </div>
             <button class="btn btn-red">Быстрый просмотр</button>
           </li>
-          <li class="product-item col col-3">
+          <li class="product-item col-1">
             <div class="product-img">
               <img src="img/12.jpg" width="267" height="267" alt="Сливочное мороженое с мятным сиропом">
             </div>
@@ -430,7 +430,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col col-4">
+        <div class="col-1">
           <ul class="footer-social">
             <li>
               <a class="social-button" href="#">Твиттер</a>
@@ -446,7 +446,7 @@
             </li>
           </ul>
         </div>
-        <div class="col col-4">
+        <div class="col-2">
           <div class="footer-navigation">
             <div class="footer-nav-column">
               <ul>
@@ -473,7 +473,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-4">
+        <div class="col-1">
           <div class="whomade">
             <img src="#" alt="Логотип HTML academy">
             <p>Сделано в
