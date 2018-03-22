@@ -87,9 +87,14 @@ textarea:focus {
 }
 
 /*хэдер*/
+.header .row {
+  margin-bottom: 0px;
+}
 
 .header-navigation-site {
+  display: flex;
   line-height: 18px;
+  margin-left: 25px;
 }
 
 .header-navigation-site,
@@ -116,7 +121,7 @@ textarea:focus {
 }
 
 .header-navigation-site-item {
-  display: inline-block;
+  margin-right: 29px;
 }
 
 /* выпадашка меню */
@@ -286,7 +291,6 @@ textarea:focus {
 }
 
 /* хиты */
-
 .product-list {
   list-style: none;
   flex-wrap: wrap;
@@ -296,6 +300,7 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .product-desc a {
@@ -320,6 +325,14 @@ textarea:focus {
 
 .product-item:hover {
   background-color: rgba(248, 247, 244, 0.2);
+}
+
+.product-item button {
+  display: none;
+}
+
+.product-item:hover button {
+  display: block;
 }
 
 /* преимущества */
@@ -448,6 +461,7 @@ textarea:focus {
   font-weight: 400;
   line-height: 18px;
   color: #fefefe;
+  text-align: right;
 }
 
 a.bold {
@@ -479,6 +493,7 @@ a.bold {
 
 .breadcrumbs {
   list-style: none;
+  margin: 0px;
 }
 
 .breadcrumbs-item {
@@ -509,6 +524,18 @@ a.bold {
 }
 
 /* фильтры */
+.filter-choice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-choice-col {
+  margin-right: 16px;
+}
+
+.filter-choice-col:nth-child(5n) {
+  margin-right: 0px;
+}
 
 .filter-choice select.input-transparent:hover {
   color: #323232;
@@ -562,73 +589,37 @@ a.bold {
 }
 
 /* сетка */
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
 
 .row {
   display: flex;
-}
-
-.col {
-  padding-left: 13px;
-  padding-right: 13px;
-}
-
-.col:first-child {
-  padding-left: 0;
-}
-
-.col:last-child {
-  padding-right: 0;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-.col-11 {
-  width: 91.66666667%;
-}
-
-.col-10 {
-  width: 83.33333333%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-8 {
-  width: 66.66666667%;
-}
-
-.col-7 {
-  width: 58.33333333%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-5 {
-  width: 41.66666667%;
-}
-
-.col-4 {
-  width: 33.33333333%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-2 {
-  width: 16.66666667%;
+  margin-bottom: 40px;
 }
 
 .col-1 {
-  width: 8.33333333%;
+  width: 23.323%;
+  margin-right: 2.2%;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 1250px;
-  margin: 0 auto;
+.col-1:nth-child(4n) {
+  margin-right: 0;
+}
+
+.col-2 {
+  width: 48.846%;
+  margin-right: 2.2%;
+  box-sizing: border-box;
+}
+
+.col-2:nth-child(2n) {
+  margin-right: 0;
+}
+
+.col-3 {
+  width: 76.569%;
+  box-sizing: border-box;
 }
