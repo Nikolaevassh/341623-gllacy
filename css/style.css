@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -47,7 +47,7 @@ a:active {
 }
 
 .btn {
-  padding: 15px 25px;
+  padding: 12px 23px;
   border: none;
   border-radius: 24px;
   font-size: 18px;
@@ -60,7 +60,7 @@ a:active {
 
 .btn-lg {
   display: inline-block;
-  padding: 17px 42px;
+  padding: 10px 41px;
 
   font-size: 32px;
   line-height: 44px;
@@ -262,10 +262,12 @@ textarea:focus {
 .promo {
   position: relative;
   padding-top: 245px;
+  margin-bottom: 40px;
 }
 
 .promo-slides {
   list-style: none;
+  margin-bottom: 0;
 }
 
 .promo-slide {
@@ -348,9 +350,16 @@ textarea:focus {
 
 /* банеры */
 .banners-item {
+  max-width: 560px;
+  min-height: 229px;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
+
+  position: relative;
 }
 
 .banners-item-raspberry {
@@ -366,6 +375,7 @@ textarea:focus {
   font-weight: 700;
   line-height: 41px;
   color: #ffffff;
+  margin: 0;
 }
 
 .banners-item-desc {
@@ -373,6 +383,12 @@ textarea:focus {
   font-weight: 700;
   line-height: 22px;
   color: #ffffff;
+}
+
+.banners-items .btn {
+  position: absolute;
+  bottom: 23px;
+  right: 21px;
 }
 
 /* хиты */
@@ -386,6 +402,10 @@ textarea:focus {
   padding-right: 0;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.product-img img {
+  border-radius: 135px;
 }
 
 .product-desc a {
