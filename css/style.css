@@ -184,6 +184,10 @@ textarea:hover {
   background-color: #ededed;
 }
 
+.header-navigation-site-item:first-child a:focus~ul.catalog-submenu {
+  display: block;
+}
+
 .active {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -954,7 +958,7 @@ textarea:hover {
   box-sizing: border-box;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 75px;
   margin-top: -160px;
   margin-right: 27px;
   padding-left: 25px;
