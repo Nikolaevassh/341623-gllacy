@@ -401,7 +401,7 @@
               <span class="contacts-address-desc">(с 10 до 20 ежедневно) </span>
             </p>
           </div>
-          <button class="btn btn-red">Форма обратной связи</button>
+          <button class="btn btn-red js-modal">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -535,6 +535,20 @@
     </section>
     <div class="modal-overlay"></div>
   </div>
+
+<script>
+  var openButton = document.querySelector(".js-modal");
+  var closeButton = document.querySelector(".popup-close");
+  var modal = document.querySelector(".feedback-popup");
+
+  openButton.addEventListener("click", function(){
+    modal.classList.add("active");
+  });
+
+  closeButton.addEventListener("click", function(){
+    modal.classList.remove("active");
+  });
+</script>
 
 </body>
 

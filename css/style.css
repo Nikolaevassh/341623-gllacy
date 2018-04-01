@@ -262,11 +262,13 @@ textarea:hover {
   background-color: #f8f7f4;
   position: absolute;
   z-index: 1;
+  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,.4);
+  box-shadow: 0 20px 20px rgba(0,0,0,.4);
 }
 
 .catalog-submenu-item {
   position: relative;
-  padding: 7px 21px;
+  padding: 7px 19px;
   width: 143px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -277,7 +279,7 @@ textarea:hover {
 
 .catalog-submenu-item.featured-item {
   position: relative;
-  padding: 9px 20px 11px;
+  padding: 9px 19px 11px;
   font-size: 14px;
   font-weight: 700;
   cursor: default;
@@ -580,11 +582,10 @@ textarea:hover {
 
 .basket-table-calc {
   width: 25%;
-  padding: 2px 8px 28px;
+  padding: 2px 0 28px 12px;
 }
 
 .basket-table-cost {
-  color: #999999;
   padding: 2px 8px 28px;
   width: 15%;
 }
@@ -592,6 +593,7 @@ textarea:hover {
 .basket-table-price {
   padding: 8px 0;
   width: 25%;
+  color: #999;
 }
 
 .basket-table-name {
@@ -874,7 +876,7 @@ textarea:hover {
   left: 50%;
   display: block;
   width: 293px;
-  height: 405px;
+  height: 415px;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.3);
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
@@ -1054,6 +1056,7 @@ textarea:hover {
 
 .contacts {
   position: relative;
+  /* margin-top: -20px; */
 }
 
 .contacts-info {
@@ -1107,6 +1110,8 @@ textarea:hover {
 
 .map-placeholder {
   width: 100%;
+  max-height: 430px;
+  margin: -4px;
 }
 
 /* футер */
@@ -1286,6 +1291,10 @@ a.bold {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 3;
+}
+
+.feedback-popup.active {
+  display: block;  
 }
 
 .feedback-popup-heading {
@@ -1821,8 +1830,8 @@ a.bold {
   overflow: hidden;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 2px 2px 0;
-  padding: 8px 24px;
+  margin: 0 2px 2px 9px;
+  padding: 8px 26px;
   -webkit-box-shadow: 0 0 0 2px #fff;
   box-shadow: 0 0 0 2px #fff;
   border-radius: 30px;
