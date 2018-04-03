@@ -73,6 +73,13 @@ a:active {
   );
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f26843),
+    to(#e74a35)
+  );
   background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -91,6 +98,13 @@ a:active {
   );
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f58669),
+    to(#ec6f5e)
+  );
   background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -107,6 +121,13 @@ a:active {
   );
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d84732),
+    to(#e1613e)
+  );
   background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -262,8 +283,8 @@ textarea:hover {
   background-color: #f8f7f4;
   position: absolute;
   z-index: 1;
-  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,.4);
-  box-shadow: 0 20px 20px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-submenu-item {
@@ -1065,6 +1086,8 @@ textarea:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
+  height: 305px;
+  width: 300px;
   top: 50%;
   right: 75px;
   margin-top: -160px;
@@ -1103,15 +1126,16 @@ textarea:hover {
 }
 
 .contacts-indent {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 /* В ДАЛЬНЕЙШЕМ БУДЕТ ВСТАВЛЕНА ИНТЕРАКТИВНАЯ КАРТА, КОТОРАЯ БУДЕТ ЗАНИМАТЬ ВСЮ ШИРИНУ ВЬЮПОРТА */
 
 .map-placeholder {
   width: 100%;
+  height: 100%;
   max-height: 430px;
-  margin: -4px;
+  display: block;
 }
 
 /* футер */
@@ -1228,7 +1252,7 @@ textarea:hover {
   margin-top: 18px;
   width: 267px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .whomade-img {
@@ -1275,6 +1299,10 @@ a.bold {
   z-index: 2;
 }
 
+.modal-overlay.active {
+  display: block;
+}
+
 .feedback-popup {
   position: fixed;
   top: 50%;
@@ -1294,7 +1322,7 @@ a.bold {
 }
 
 .feedback-popup.active {
-  display: block;  
+  display: block;
 }
 
 .feedback-popup-heading {
@@ -1830,7 +1858,7 @@ a.bold {
   overflow: hidden;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 2px 2px 9px;
+  margin: 0 2px 2px 2px;
   padding: 8px 26px;
   -webkit-box-shadow: 0 0 0 2px #fff;
   box-shadow: 0 0 0 2px #fff;

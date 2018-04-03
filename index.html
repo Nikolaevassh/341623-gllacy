@@ -536,19 +536,23 @@
     <div class="modal-overlay"></div>
   </div>
 
-<script>
-  var openButton = document.querySelector(".js-modal");
-  var closeButton = document.querySelector(".popup-close");
-  var modal = document.querySelector(".feedback-popup");
+  <script>
+    var openButton = document.querySelector(".js-modal");
+    var overlay = document.querySelector(".modal-overlay");
+    var closeButton = document.querySelector(".popup-close");
+    var modal = document.querySelector(".feedback-popup");
 
-  openButton.addEventListener("click", function(){
-    modal.classList.add("active");
-  });
+    openButton.addEventListener("click", function () {
+      modal.classList.add("active");
+      overlay.classList.add("active");
+    });
 
-  closeButton.addEventListener("click", function(){
-    modal.classList.remove("active");
-  });
-</script>
+    closeButton.addEventListener("click", function () {
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+
+  </script>
 
 </body>
 
